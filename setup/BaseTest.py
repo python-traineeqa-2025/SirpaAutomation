@@ -9,7 +9,7 @@ class BaseTest:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
     logger = logging.getLogger(__name__)
 
-    def setup_method(self, method):
+    def setup_method(self, method): #the name should always be 'setup_method'
         driver_path = r"C:\Users\sirpah\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\QA\QA Automation\SirpaAutomation\bins\chromedriver.exe"
         ser = Service(driver_path)
         logging.info("set up driver")
