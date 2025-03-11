@@ -1,5 +1,6 @@
 from sauceDemo.Product_Pom.product_prop import productProperties
 import logging
+import time
 
 class Product(productProperties):
     def __init__(self, driver):
@@ -17,6 +18,6 @@ class Product(productProperties):
         price=self.Price
         print(price.text)
 
-
+        time.sleep(5)
 
 

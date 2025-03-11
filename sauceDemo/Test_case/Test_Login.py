@@ -17,5 +17,5 @@ class TestLoginCreds(BaseTest):
 
         lg.login(Username, password)
 
-        time.sleep(5)
+        time.sleep(2)
 
